@@ -1,6 +1,0 @@
-C:\Users\Agamemnon\Development\Prework-CodeChallenges\Prework-CodeChallenges\Prework-CodeChallenges\bin\Debug\Prework-CodeChallenges.exe.config
-C:\Users\Agamemnon\Development\Prework-CodeChallenges\Prework-CodeChallenges\Prework-CodeChallenges\bin\Debug\Prework-CodeChallenges.exe
-C:\Users\Agamemnon\Development\Prework-CodeChallenges\Prework-CodeChallenges\Prework-CodeChallenges\bin\Debug\Prework-CodeChallenges.pdb
-C:\Users\Agamemnon\Development\Prework-CodeChallenges\Prework-CodeChallenges\Prework-CodeChallenges\obj\Debug\Prework-CodeChallenges.csprojAssemblyReference.cache
-C:\Users\Agamemnon\Development\Prework-CodeChallenges\Prework-CodeChallenges\Prework-CodeChallenges\obj\Debug\Prework-CodeChallenges.exe
-C:\Users\Agamemnon\Development\Prework-CodeChallenges\Prework-CodeChallenges\Prework-CodeChallenges\obj\Debug\Prework-CodeChallenges.pdb
