@@ -10,15 +10,25 @@ namespace Prework_CodeChallenges
     {
         static void Main(string[] args)
         {
-            int[] param1 = new int[] { 6, 4, 4, 1, 3 };
+            int[] chal1input = new int[] { 6, 4, 4, 1, 3 };
             Console.WriteLine("Code Challenge 1");
             Console.WriteLine($"Array input [ 6, 4, 4, 1, 3 ], Int input 4");
-            Console.WriteLine($"Answer: {ArrayMaxResult(param1, 4)}");
+            Console.WriteLine($"Answer: {ArrayMaxResult(chal1input, 4)}");
 
             Console.WriteLine("\n Code Challenge 2");
             Console.WriteLine($"Answer: {CheckIfLeapYear(1604)}");
             Console.WriteLine($"Answer: {CheckIfLeapYear(1800)}");
             Console.WriteLine($"Answer: {CheckIfLeapYear(2000)}");
+
+            int[] chal3inputCorrect1 = new int[] { 1, 3, 2 };
+            int[] chal3inputCorrect2 = new int[] { 0, 0, 0, 0 };
+            int[] chal3inputIncorrect1 = new int[] { 1, -3, 2 };
+            int[] chal3inputIncorrect2 = new int[] { 4, 5, 6 };
+            Console.WriteLine("\n Code Challenge 3");
+            Console.WriteLine($"Answer: [1, 3, 2] {CheckIfPerfectSequence(chal3inputCorrect1)}");
+            Console.WriteLine($"Answer: [0, 0, 0, 0] {CheckIfPerfectSequence(chal3inputCorrect2)}");
+            Console.WriteLine($"Answer: [1, -3, 2] {CheckIfPerfectSequence(chal3inputIncorrect1)}");
+            Console.WriteLine($"Answer: [4, 5, 6] {CheckIfPerfectSequence(chal3inputIncorrect2)}");
 
             Console.ReadLine();
         }
@@ -45,6 +55,32 @@ namespace Prework_CodeChallenges
             else
             {
                 return $"{year} is not a leap year.";
+            }
+        }
+
+        private static string CheckIfPerfectSequence(int[] array)
+        {
+            int sum = 0;
+            int product = 1;
+            foreach (int num in array)
+            {
+                if (num >= 0)
+                {
+                    sum += num;
+                    product *= num;
+                }
+                else
+                {
+                    return "Not a perfect sequence, contains negative value.";
+                }
+            }
+            if (sum == product)
+            {
+                return "Array is a perfect sequence";
+            }
+            else
+            {
+                return "Array is not a perfect sequence.";
             }
         }
     }
