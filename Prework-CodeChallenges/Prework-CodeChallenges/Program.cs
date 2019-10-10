@@ -15,7 +15,10 @@ namespace Prework_CodeChallenges
             Console.WriteLine($"Array input [ 6, 4, 4, 1, 3 ], Int input 4");
             Console.WriteLine($"Answer: {ArrayMaxResult(param1, 4)}");
 
-
+            Console.WriteLine("\n Code Challenge 2");
+            Console.WriteLine($"Answer: {CheckIfLeapYear(1604)}");
+            Console.WriteLine($"Answer: {CheckIfLeapYear(1800)}");
+            Console.WriteLine($"Answer: {CheckIfLeapYear(2000)}");
 
             Console.ReadLine();
         }
@@ -33,6 +36,16 @@ namespace Prework_CodeChallenges
             return pick * timesSeen;
         }
 
-
+        private static string CheckIfLeapYear(int year)
+        {
+            if (year % 4 == 0 && year % 100 != 0 || year % 4 == 0 && year % 100 == 0 && year % 400 == 0)
+            {
+                return $"{year} is a leap year.";
+            }
+            else
+            {
+                return $"{year} is not a leap year.";
+            }
+        }
     }
 }
