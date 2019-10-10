@@ -33,3 +33,21 @@ Perfect Sequences
 A perfect sequence is a sequence such that all of its elements are non-negative integers and the product of all of them is equal to their sum. For example: [2,2], [1,3,2] and [0,0,0,0] are perfect sequences and [4,5,6] and [0,2,-2] are not perfect sequences. Negative numbers of any kind are not valid in a perfect sequence.
 
 ![Challenge 3 Screenshot](/Screenshots/codeChallenge3.png)
+
+## Problem 4: Sum of Rows
+Problem Statement
+
+Given a matrix of integers. Return the sum of each row in a single dimensional array.
+
+Input Format
+a multidimensional array with the dimensions of m x n (m = rows, n = columns).
+
+    duplicate integers are possible.
+    Negative numbers are possible
+    both m and n can vary in length
+
+The user should specify the length and the width of the array within the console. To populate the numbers, you may randomly generate them, or have the user input one by one.
+
+The method should take in the multidimensional array and return the single dimensional array with the sums.
+
+![Challenge 4 Screenshot](/Screenshots/codeChallenge4.png)
